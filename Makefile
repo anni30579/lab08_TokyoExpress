@@ -5,7 +5,7 @@ CXXFLAGS= -Wall -Wno-uninitialized
 
 BINARIES=strFuncsTest \
 
-COMMON_OBJECTS=tddFuncs.o strFuncs.o
+COMMON_OBJECTS=tddFuncs.o strFuncs.o recLinkedListFuncs.o
 
 all: ${BINARIES}
 
