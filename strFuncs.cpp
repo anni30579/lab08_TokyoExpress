@@ -44,10 +44,10 @@ bool isPalindrome(const string s1){
   if (s1.length() == 1)
     return true;
   else if (s1.length() == 2) {
-    if (s1[0] == s1[1]) return true;
+    if (tolower(s1[0]) == tolower(s1[1])) return true;
     else return false;
   }
-  else if (s1[0] == s1[s1.length() - 1]) {
+  else if (tolower(s1[0]) == tolower(s1[s1.length() - 1])) {
     return isPalindrome(s1.substr(1, s1.length() - 2));
   }
   else

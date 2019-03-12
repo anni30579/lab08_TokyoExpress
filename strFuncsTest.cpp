@@ -11,13 +11,16 @@ int main() {
   string panama = "amanaplanacanalpanama";
   string llo = "llo";
   string anagram = "fvvifie";
-  
+  string another = "ee";
+  string lol2 = "lololololol";
   assertTrue(isPalindrome(lol), "lol");
   assertEquals(isPalindrome(notpaly), 0, "notapalindrome");
   assertTrue(isPalindrome(five), "fivevif");
   assertTrue(isPalindrome(even), "wallaw");
   assertTrue(isPalindrome(panama), "amanaplanacanalpanama");
-
+  assertTrue(isPalindrome(another), "ee");
+  assertTrue(isPalindrome(lol2), "lololololol");
+  
   assertTrue(isAnagram(lol, llo), "lol vs llo");
   assertTrue(isAnagram(five, anagram), "fivevif vs fvvifie");
   assertEquals(isAnagram(five, even), 0, "fivevif vs wallaw");
