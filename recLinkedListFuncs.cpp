@@ -5,8 +5,8 @@
 int recursiveSum(Node* head) {
   // Precondition: Proper node is inputted
   // Postcondition: Recursively calculated sum of node values is outputted
-  if (head.next.data = NULL) return 0;
-  return head.data + recursiveSum(head.next);
+  if (head->next == NULL) return head->data;
+  return head->data + recursiveSum(head->next);
 }
 
 //head: ptr to a Node* which is the head of a linked list
@@ -15,6 +15,7 @@ int recursiveSum(Node* head) {
 int recursiveLargestValue(Node* head) {
   // Precondition: Proper node is inputted
   // Postcondition: Recursively calculated max value of node is outputted
-  if (head.data > recursiveLargestValue(head.next)) return head.data;
-  else return recursiveLargestValue(head.next);
+  if (head->next == NULL) return head->data;	
+  else if (head->data > recursiveLargestValue(head->next)) return head->data;
+  else return recursiveLargestValue(head->next);
 }

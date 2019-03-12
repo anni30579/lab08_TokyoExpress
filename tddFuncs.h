@@ -21,8 +21,6 @@ void assertEquals(Node* expected,
 
 void assertTrue(bool expression, std::string message="");
 
-void assertFalse(bool expression, std::string message="");
-
 
 #define ASSERT_TRUE(expression) assertTrue(expression,#expression)
 
